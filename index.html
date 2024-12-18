@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        --primary-color: #34acdb53;
+        --secondary-color: #cc802e;
+      }
+
+      body {
+        background: linear-gradient(
+          90deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="bg-white rounded-lg shdow-lg p-6 max-w-xs">
+      <input
+        type="text"
+        class="calculator-input bg-gray-100 mb-4 p-2 rounded text-2xl text-right w-full"
+        value=""
+        disabled
+      />
+
+      <div class="calculator-keys grid grid-cols-4 gap-2">
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="7">
+          7
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="8">
+          8
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="9">
+          9
+        </button>
+        <button
+          type="button"
+          class="operator bg-orange-500 p-4 rounded text-xl text-white"
+          value="+"
+        >
+          +
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="4">
+          4
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="5">
+          5
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="6">
+          6
+        </button>
+        <button
+          type="button"
+          class="operator bg-orange-500 p-4 rounded text-xl text-white"
+          value="-"
+        >
+          -
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="1">
+          1
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="2">
+          2
+        </button>
+        <button type="button" class="bg-gray-300 p-4 rounded text-xl" value="3">
+          3
+        </button>
+        <button
+          type="button"
+          class="operator bg-orange-500 p-4 rounded text-xl text-white"
+          value="*"
+        >
+          &times;
+        </button>
+        <button class="bg-gray-300 p-4 rounded text-xl" value="0">0</button>
+        <button class="bg-gray-300 p-4 rounded text-xl" value="00">00</button>
+        <button class="decimal bg-gray-300 p-4 rounded text-xl" value=".">
+          .
+        </button>
+        <button class="bg-orange-500 rounded p-4 text-xl text-white" value="/">
+          &divide;
+        </button>
+        <button
+          type="button"
+          class="clear bg-red-600 p-4 rounded text-xl text-white"
+          value="clear"
+        >
+          AC
+        </button>
+        <button
+          type="button"
+          class="hesapla bg-green-500 col-span-3 rounded text-xl text-white"
+          value="="
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
